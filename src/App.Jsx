@@ -12,9 +12,9 @@ const PETALS = Array.from({ length: 18 }, (_, i) => ({
 }));
 
 const PHOTOS = [
-  { id: 1, category: 'Album Concept', title: "REVIVE+", color: '#F2C4CE', accent: '#E8A4B8', desc: "Dreamy pastel concept from REVIVE+ IVE album", imgSrc: '/img/Albumconsept.jpg' },
-  { id: 2, category: 'On-Stage', title: 'Bang Bang Performance', color: '#C9B8E8', accent: '#B09DD4', desc: 'Charismatic stage presence at Inkigayo', imgSrc: '/img/Bangbang.jpg' },
-  { id: 3, category: 'Airport Fashion', title: 'Fan Concert', color: '#B8D4E8', accent: '#94BDD4', desc: "Show What I'AM", imgSrc: '/img/LizOnstage.jpg' },
+  { id: 1, category: 'Album Concept', title: 'REVIVE+', color: '#F2C4CE', accent: '#E8A4B8', desc: 'Dreamy pastel concept from REVIVE+ IVE album', imgSrc: '/Liz/img/Albumconsept.jpg' },
+  { id: 2, category: 'On-Stage', title: 'Bang Bang Performance', color: '#C9B8E8', accent: '#B09DD4', desc: 'Charismatic stage presence at Inkigayo', imgSrc: '/Liz/img/Bangbang.jpg' },
+  { id: 3, category: 'Airport Fashion', title: 'Fan Concert', color: '#B8D4E8', accent: '#94BDD4', desc: "Show What I'AM", imgSrc: 'Liz/img/LizOnstage.jpg' },
   { id: 4, category: 'Album Concept', title: 'After Like', color: '#F9D5E5', accent: '#F0B8CC', desc: 'Iconic concept photos from After Like era' },
   { id: 5, category: 'On-Stage', title: 'Starlight Concert', color: '#E8C9B8', accent: '#D4B094', desc: 'Solo spotlight moment at IVE 1st Concert' },
   { id: 6, category: 'Airport Fashion', title: 'Paris Fashion Week', color: '#C8E8C9', accent: '#A4D4A8', desc: 'Chic looks at Paris FW 2024' },
@@ -136,8 +136,6 @@ function PhotoCard({ photo, onClick }) {
   );
 }
 
-// ── Lightbox ─────────────────────────────────────────────────────────────────
-// ── Lightbox dengan Render Gambar Asli ─────────────────────────────────────────
 // ── Lightbox dengan Render Gambar Asli ─────────────────────────────────────────
 function Lightbox({ photo, photos, onClose, onPrev, onNext }) {
   useEffect(() => {
